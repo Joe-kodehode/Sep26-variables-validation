@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
   /* Colors */
-  --primary-color: #2563eb;
+  --primary-color: #269876;
   --primary-shade: #1a45a5;
   --primary-tint: #6692f1;
 
@@ -35,13 +35,190 @@
   box-sizing: border-box;
 }
 
+/* Global styling */
+
 body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--page-background);
+  color: var(--text-color);
 }
 
-.primary-color {
-  color: var(--primary-color);
+a {
+  text-decoration: none;
 }
 
-h1 {
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-tint);
+  padding: var(--large-space) 0;
+  margin-bottom: var(--medium-space);
+}
+
+header h1 {
+  margin-bottom: var(--small-space);
+}
+
+/* ========================= */
+/* SECTION                   */
+/* ========================= */
+
+section {
+  background-color: var(--card-background);
+  border: 1px solid #dddddd;
+  padding: var(--medium-space);
+  margin-bottom: var(--medium-space);
+}
+
+section h2 {
   color: var(--primary-color);
+  margin-bottom: var(--small-space);
+}
+
+section p {
+  margin-bottom: var(--small-space);
+}
+
+/* ========================= */
+/* SHARED EXAMPLES           */
+/* ========================= */
+
+.example {
+  background-color: #eef2f7;
+  border: 1px solid #cbd5e1;
+  padding: var(--medium-space);
+  margin-top: 15px;
+}
+
+.box {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--medium-space);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.card-row {
+  display: flex;
+  gap: var(--medium-space);
+}
+
+.button-row {
+  display: flex;
+  gap: var(--medium-space);
+}
+
+/* ========================= */
+/* USING A VARIABLE          */
+/* ========================= */
+
+.primary-color-box {
+  background-color: var(--primary-color);
+
+  /* Try this:
+     background-color: var(--secondary-color);
+     background-color: var(--accent-color);
+  */
+}
+
+/* ========================= */
+/* COLOR VARIABLES           */
+/* ========================= */
+
+.color-card {
+  width: 33.33%;
+  padding: var(--large-space);
+  color: white;
+  text-align: center;
+  border-radius: var(--border-radius);
+}
+
+.primary-card {
+  background-color: var(--primary-color);
+}
+
+.secondary-card {
+  background-color: var(--secondary-color);
+}
+
+.accent-card {
+  background-color: var(--accent-color);
+}
+
+/* ========================= */
+/* SPACING VARIABLES         */
+/* ========================= */
+
+.spacing-box {
+  width: 33.33%;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.small-space {
+  padding: var(--small-space);
+}
+
+.medium-space {
+  padding: var(--medium-space);
+}
+
+.large-space {
+  padding: var(--large-space);
+}
+
+/* ========================= */
+/* FONT VARIABLES            */
+/* ========================= */
+
+.small-text {
+  font-size: var(--small-font);
+}
+
+.medium-text {
+  font-size: var(--medium-font);
+}
+
+.large-text {
+  font-size: var(--large-font);
+}
+
+/* ========================= */
+/* BUTTONS                   */
+/* ========================= */
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--small-space) var(--medium-space);
+  border-radius: var(--border-radius);
+}
+
+/* ========================= */
+/* FALLBACK                  */
+/* ========================= */
+
+.fallback-box {
+  background-color: var(--missing-color, orange);
+  color: white;
+  padding: var(--medium-space);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+/* ========================= */
+/* SUMMARY                   */
+/* ========================= */
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
