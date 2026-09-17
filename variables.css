@@ -1,0 +1,47 @@
+/* CSS Variables */
+:root {
+  /* Colors */
+  --primary-color: #2563eb;
+  --primary-shade: #1a45a5;
+  --primary-tint: #6692f1;
+
+  --secondary-color: #22c55e;
+  --accent-color: #f59e0b;
+
+  --text-color: #222222;
+  --page-background: lightgrey;
+  --card-background: white;
+
+  --destructive: red;
+
+  /* Spacing */
+  --small-space: 1rem;
+  --medium-space: 1.5rem;
+  --large-space: 2.5rem;
+
+  /* Font-size */
+  --small-font: 1rem;
+  --medium-font: 1.5rem;
+  --large-font: 2.5rem;
+
+  /* Border-radius */
+  --border-radius: 8px;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+h1 {
+  color: var(--primary-color);
+}
